@@ -13,7 +13,7 @@ export class CarteleraService {
     {
       titulo: 'Dune',
       imagenUrl: 'https://pics.filmaffinity.com/Dune-209834814-large.jpg',
-      alturaTarjeta: 500,
+      alturaTarjeta: 550,
     },
     {
       titulo: 'El Conjuro 3: el diablo me obligó a hacerlo',
@@ -25,13 +25,13 @@ export class CarteleraService {
       titulo: 'No Time to Die',
       imagenUrl:
         'https://pics.filmaffinity.com/Sin_tiempo_para_morir-525355918-large.jpg',
-      alturaTarjeta: 500,
+      alturaTarjeta: 550,
     },
     {
       titulo: 'A Quiet Place Part II',
       imagenUrl:
         'https://1.bp.blogspot.com/-EFUOjNt2W6g/YSbddmov4bI/AAAAAAAAIAs/5VAkOLHdvjI4yD8Kr1RmAs--QDA9eX0ogCLcBGAsYHQ/s1481/A%2BQuiet%2BPlace%2BPart%2BII%2BPoster.jpg',
-      alturaTarjeta: 490,
+      alturaTarjeta: 560,
     },
     {
       titulo: 'House of Gucci',
@@ -43,7 +43,7 @@ export class CarteleraService {
       titulo: 'Licorice Pizza',
       imagenUrl:
         'https://pics.filmaffinity.com/Licorice_Pizza-862632135-large.jpg',
-      alturaTarjeta: 300,
+      alturaTarjeta: 560,
     },
     {
       titulo: 'Dont Look Up',
@@ -60,7 +60,7 @@ export class CarteleraService {
       titulo: 'The French Dispatch',
       imagenUrl:
         'https://m.media-amazon.com/images/M/MV5BNmQxZTNiODYtNzBhYy00MzVlLWJlN2UtNTc4YWZjMDIwMmEzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
-      alturaTarjeta: 300,
+      alturaTarjeta: 560,
     },
     {
       titulo: 'Belfast',
