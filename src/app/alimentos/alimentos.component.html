@@ -1,0 +1,16 @@
+<div class="card-group">
+  <div class="card" *ngFor="let alimento of alimentos">
+    <img
+      class="card-img-top"
+      [src]="alimento.image"
+      alt="{{ alimento.name }}"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ alimento.name }}</h5>
+      <p class="card-text">{{ alimento.description }}</p>
+      <p class="card-text">
+        <strong>{{ alimento.price | currency }}</strong>
+      </p>
+    </div>
+  </div>
+</div>

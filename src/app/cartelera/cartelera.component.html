@@ -1,0 +1,34 @@
+<!--<div class="row">
+  <div
+    class="col-lg-3 col-md-4 col-sm-6 mb-4"
+    *ngFor="let pelicula of peliculas"
+  >
+    <div class="card" [style.height.px]="pelicula.alturaTarjeta">
+      <img
+        class="card-img-top"
+        [src]="pelicula.imagenUrl"
+        [alt]="pelicula.titulo"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ pelicula.titulo }}</h5>
+        <a href="#" class="btn btn-primary">Reservar</a>
+      </div>
+    </div>
+  </div>
+</div>-->
+<div class="card-group">
+  <div class="card" *ngFor="let pelicula of peliculas">
+    <img
+      class="card-img-top"
+      [src]="pelicula.image"
+      alt="{{ pelicula.name }}"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ pelicula.titulo }}</h5>
+      <p class="card-text">{{ pelicula.description }}</p>
+      <p class="card-text">
+        <strong>{{ pelicula.price | currency }}</strong>
+      </p>
+    </div>
+  </div>
+</div>
