@@ -10,8 +10,9 @@ import { AlimentoService } from './alimentos/alimentos.service';
 import { UbicanosComponent } from './ubicanos/ubicanos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CarteleraService } from './cartelera/cartelera.service';
+import { ButtonModule } from 'primeng/button';
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, ButtonModule],
   declarations: [
     AppComponent,
     HelloComponent,

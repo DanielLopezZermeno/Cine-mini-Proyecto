@@ -11,25 +11,11 @@
       />
       <div class="card-body">
         <h5 class="card-title">{{ pelicula.titulo }}</h5>
-        <a href="#" class="btn btn-primary">Reservar</a>
+        <p-button
+          label="Reservar"
+          styleClass="p-button-rounded p-button-secondary"
+        ></p-button>
       </div>
     </div>
   </div>
 </div>
-<!--
-<div class="card-group">
-  <div class="card" *ngFor="let pelicula of peliculas">
-    <img
-      class="card-img-top"
-      [src]="pelicula.image"
-      alt="{{ pelicula.name }}"
-    />
-    <div class="card-body">
-      <h5 class="card-title">{{ pelicula.titulo }}</h5>
-      <p class="card-text">{{ pelicula.description }}</p>
-      <p class="card-text">
-        <strong>{{ pelicula.price | currency }}</strong>
-      </p>
-    </div>
-  </div>
-</div>-->
