@@ -16,7 +16,7 @@ import { CarteleraService } from './cartelera.service';
 })
 export class CarteleraComponent implements OnInit {
   peliculas: any[];
-
+  colSize = 6;
   constructor(private peliculaService: CarteleraService) {}
 
   ngOnInit() {
