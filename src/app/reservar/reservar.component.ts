@@ -10,7 +10,7 @@ import { Pelicula } from '../pelicula';
   styleUrls: ['./reservar.component.css'],
 })
 export class ReservarComponent implements OnInit {
-  date: Date;
+  date: Date[];
   pelicula: Pelicula;
 
   constructor(

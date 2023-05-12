@@ -1,0 +1,87 @@
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 45%;
+  max-width: 400px;
+}
+
+.form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.form-control span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-control input[type='text'],
+.form-control input[type='email'],
+.form-control input[type='password'] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0c110c61;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 100%;
+    margin: 10px 0;
+    max-width: none;
+  }
+}
+.feedback {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4caf4f00;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  font-size: 16px;
+}
