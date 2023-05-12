@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'alimentos', component: AlimentosComponent },
   { path: 'ubicanos', component: UbicanosComponent },
   { path: 'perfil', component: PerfilComponent },
-  { path: 'reservar', component: ReservarComponent}
+  { path: 'reservar/:id', component: ReservarComponent },
 ];
 
 @NgModule({
