@@ -10,16 +10,13 @@ import { AlimentoService } from './alimentos/alimentos.service';
 import { UbicanosComponent } from './ubicanos/ubicanos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CarteleraService } from './cartelera/cartelera.service';
-import { ButtonModule } from 'primeng/button';
-import { CalendarModule } from 'primeng/calendar';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ButtonModule,
-    CalendarModule,
     BrowserAnimationsModule,
   ],
   declarations: [

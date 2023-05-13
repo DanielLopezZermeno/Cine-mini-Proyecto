@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PrimeNGConfig } from 'primeng/api';
 import { CarteleraService } from '../cartelera/cartelera.service';
 import { Pelicula } from '../pelicula';
 
