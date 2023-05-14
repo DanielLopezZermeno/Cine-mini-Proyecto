@@ -29,3 +29,21 @@
 .movie-table td:last-child {
   text-align: right;
 }
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+input[type='date'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 1.2em;
+}
+
+input[type='date']:focus {
+  border-color: #008cba;
+  box-shadow: 0 0 5px #008cba;
+}

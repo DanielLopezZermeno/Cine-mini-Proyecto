@@ -11,11 +11,13 @@ import { Pelicula } from '../pelicula';
 export class ReservarComponent implements OnInit {
   date: Date[];
   pelicula: Pelicula;
-
+  
   constructor(
     private route: ActivatedRoute,
     private carteleraService: CarteleraService
-  ) {}
+  ) {
+    
+  }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
