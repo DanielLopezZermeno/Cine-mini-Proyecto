@@ -11,17 +11,48 @@
     </tr>
     <tr>
       <td></td>
-      <td><img [src]="pelicula.imagenUrl" [alt]="pelicula.titulo" /></td>
+      <td>
+        <img
+          [src]="pelicula.imagenUrl"
+          [alt]="pelicula.titulo"
+          style="width: 100%;"
+        />
+      </td>
     </tr>
   </table>
 </div>
-<label for="start">Seleccione Fecha:</label>
-<input
-  type="date"
-  id="start"
-  name="trip-start"
-  min="2023-05-14"
-  max="2023-12-31"
-/>
-<label for="hora">Seleccione Hora:</label>
-<input type="time" id="hora" name="hora" min="09:00" max="18:00" step="3600" />
+<!--
+<form (ngSubmit)="reservar()">
+  <label for="usuario">Usuario:</label>
+  <input
+    type="text"
+    id="usuario"
+    name="usuario"
+    [(ngModel)]="usuario"
+    required
+  />
+
+  <label for="start">Seleccione Fecha:</label>
+  <input
+    type="date"
+    id="start"
+    name="fecha"
+    [(ngModel)]="fecha"
+    min="2023-05-14"
+    max="2023-12-31"
+  />
+
+  <label for="hora">Seleccione Hora:</label>
+  <input
+    type="time"
+    id="hora"
+    name="hora"
+    [(ngModel)]="hora"
+    min="09:00"
+    max="18:00"
+    step="3600"
+  />
+
+  <button type="submit">Reservar</button>
+</form>
+-->
