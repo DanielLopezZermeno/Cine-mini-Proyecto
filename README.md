@@ -1,3 +1,3 @@
 # Cine-mini-Proyecto
 
-(https://angular-ivy-rdusuu.stackblitz.io)
+https://angular-ivy-rdusuu.stackblitz.io
