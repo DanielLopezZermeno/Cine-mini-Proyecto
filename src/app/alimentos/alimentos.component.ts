@@ -16,7 +16,7 @@ import { AlimentoService } from './alimentos.service';
 })
 export class AlimentosComponent implements OnInit {
   alimentos: any[];
-
+  video = 'bKL1OqdXtTs';
   constructor(private alimentoService: AlimentoService) {}
 
   ngOnInit() {

@@ -18,11 +18,7 @@ export class ReservarComponent implements OnInit {
     private carteleraService: CarteleraService
   ) {}
 
-  reservar(formulario: any) {
-    const usuario = formulario.usuario;
-    const fecha = formulario.fecha;
-    const hora = formulario.hora;
-    console.log(usuario);
+  reservar() {
     // Revisar si el usuario existe en el localStorage
     // Obtener el arreglo de usuarios del localStorage
     const reservas = JSON.parse(localStorage.getItem('reserva')) || [];

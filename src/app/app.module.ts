@@ -13,6 +13,7 @@ import { CarteleraService } from './cartelera/cartelera.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReservarComponent } from './reservar/reservar.component';
+import { SeguroPipe } from './alimentos/seguro.pipe';
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,6 +29,7 @@ import { ReservarComponent } from './reservar/reservar.component';
     UbicanosComponent,
     PerfilComponent,
     ReservarComponent,
+    SeguroPipe,
   ],
   bootstrap: [AppComponent],
   providers: [AlimentoService, CarteleraService],
