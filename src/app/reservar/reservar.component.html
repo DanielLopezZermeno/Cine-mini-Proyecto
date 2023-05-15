@@ -33,7 +33,13 @@
   />
 
   <label for="start">Seleccione Fecha:</label>
-  <p-calendar [(ngModel)]="fecha"></p-calendar>
+  <p-calendar
+    [(ngModel)]="fecha"
+    name="fecha"
+    id="fecha"
+    [showIcon]="true"
+    [minDate]="minFecha"
+  ></p-calendar>
 
   <label for="hora">Seleccione Hora:</label>
   <input
