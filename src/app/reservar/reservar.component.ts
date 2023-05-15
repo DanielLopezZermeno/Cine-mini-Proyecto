@@ -22,7 +22,7 @@ export class ReservarComponent implements OnInit {
     const usuario = formulario.usuario;
     const fecha = formulario.fecha;
     const hora = formulario.hora;
-
+    console.log(usuario);
     // Revisar si el usuario existe en el localStorage
     // Obtener el arreglo de usuarios del localStorage
     const usuarios = JSON.parse(localStorage.getItem('usuarios'));
