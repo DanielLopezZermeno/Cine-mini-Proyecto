@@ -12,6 +12,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { CarteleraService } from './cartelera/cartelera.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReservarComponent } from './reservar/reservar.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AlimentosComponent,
     UbicanosComponent,
     PerfilComponent,
+    ReservarComponent,
   ],
   bootstrap: [AppComponent],
   providers: [AlimentoService, CarteleraService],
