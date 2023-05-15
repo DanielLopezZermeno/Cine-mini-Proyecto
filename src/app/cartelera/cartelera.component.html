@@ -1,97 +1,101 @@
-<div class="row">
-  <!-- grupo 1: 4 películas -->
-  <div
-    class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4"
-    *ngFor="let pelicula of peliculas.slice(0, 4)"
-  >
-    <div class="card" [style.height.px]="pelicula.alturaTarjeta">
-      <img
-        class="card-img-top"
-        [src]="pelicula.imagenUrl"
-        [alt]="pelicula.titulo"
-      />
-      <div class="card-body">
-        <h5 class="card-title">{{ pelicula.titulo }}</h5>
-        <button
-          type="button"
-          class="btn btn-secondary"
-          [routerLink]="['/reservar', pelicula.id]"
-        >
-          Reservar
-        </button>
-      </div>
-    </div>
-  </div>
+<body>
+  <h2 style="text-align: center; font-style: italic;">"Vive la magia"</h2>
 
-  <!-- grupo 2: 3 películas -->
-  <div
-    class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4"
-    *ngFor="let pelicula of peliculas.slice(4, 7)"
-  >
-    <div class="card" [style.height.px]="pelicula.alturaTarjeta">
-      <img
-        class="card-img-top"
-        [src]="pelicula.imagenUrl"
-        [alt]="pelicula.titulo"
-      />
-      <div class="card-body">
-        <h5 class="card-title">{{ pelicula.titulo }}</h5>
-        <button
-          type="button"
-          class="btn btn-secondary"
-          [routerLink]="['/reservar', pelicula.id]"
-        >
-          Reservar
-        </button>
+  <div class="row">
+    <!-- grupo 1: 4 películas -->
+    <div
+      class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4"
+      *ngFor="let pelicula of peliculas.slice(0, 4)"
+    >
+      <div class="card" [style.height.px]="pelicula.alturaTarjeta">
+        <img
+          class="card-img-top"
+          [src]="pelicula.imagenUrl"
+          [alt]="pelicula.titulo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ pelicula.titulo }}</h5>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            [routerLink]="['/reservar', pelicula.id]"
+          >
+            Reservar
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- grupo 3: 2 películas -->
-  <div
-    class="col-lg-6 col-md-12 col-sm-12 col-12 mb-4"
-    *ngFor="let pelicula of peliculas.slice(7, 9)"
-  >
-    <div class="card" [style.height.px]="pelicula.alturaTarjeta">
-      <img
-        class="card-img-top"
-        [src]="pelicula.imagenUrl"
-        [alt]="pelicula.titulo"
-      />
-      <div class="card-body">
-        <h5 class="card-title">{{ pelicula.titulo }}</h5>
-        <button
-          type="button"
-          class="btn btn-secondary"
-          [routerLink]="['/reservar', pelicula.id]"
-        >
-          Reservar
-        </button>
+    <!-- grupo 2: 3 películas -->
+    <div
+      class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4"
+      *ngFor="let pelicula of peliculas.slice(4, 7)"
+    >
+      <div class="card" [style.height.px]="pelicula.alturaTarjeta">
+        <img
+          class="card-img-top"
+          [src]="pelicula.imagenUrl"
+          [alt]="pelicula.titulo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ pelicula.titulo }}</h5>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            [routerLink]="['/reservar', pelicula.id]"
+          >
+            Reservar
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- grupo 4: 1 película -->
-  <div
-    class="col-lg-12 col-md-12 col-sm-12 col-12 mb-4"
-    *ngFor="let pelicula of peliculas.slice(9, 10)"
-  >
-    <div class="card" [style.height.px]="pelicula.alturaTarjeta">
-      <img
-        class="card-img-top"
-        [src]="pelicula.imagenUrl"
-        [alt]="pelicula.titulo"
-      />
-      <div class="card-body">
-        <h5 class="card-title">{{ pelicula.titulo }}</h5>
-        <button
-          type="button"
-          class="btn btn-secondary"
-          [routerLink]="['/reservar', pelicula.id]"
-        >
-          Reservar
-        </button>
+    <!-- grupo 3: 2 películas -->
+    <div
+      class="col-lg-6 col-md-12 col-sm-12 col-12 mb-4"
+      *ngFor="let pelicula of peliculas.slice(7, 9)"
+    >
+      <div class="card" [style.height.px]="pelicula.alturaTarjeta">
+        <img
+          class="card-img-top"
+          [src]="pelicula.imagenUrl"
+          [alt]="pelicula.titulo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ pelicula.titulo }}</h5>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            [routerLink]="['/reservar', pelicula.id]"
+          >
+            Reservar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- grupo 4: 1 película -->
+    <div
+      class="col-lg-12 col-md-12 col-sm-12 col-12 mb-4"
+      *ngFor="let pelicula of peliculas.slice(9, 10)"
+    >
+      <div class="card" [style.height.px]="pelicula.alturaTarjeta">
+        <img
+          class="card-img-top"
+          [src]="pelicula.imagenUrl"
+          [alt]="pelicula.titulo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ pelicula.titulo }}</h5>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            [routerLink]="['/reservar', pelicula.id]"
+          >
+            Reservar
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</body>

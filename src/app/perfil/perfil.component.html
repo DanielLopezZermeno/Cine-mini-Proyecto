@@ -1,53 +1,55 @@
-<div class="form-container">
-  <!-- Formulario de registro -->
-  <form class="form" (ngSubmit)="registro()">
-    <h2>Registro</h2>
-    <div class="form-control">
-      <label>
-        <span>Nombre de usuario</span>
-        <input type="text" [(ngModel)]="username" name="username" required />
-      </label>
-    </div>
-    <div class="form-control">
-      <label>
-        <span>Correo electrónico</span>
-        <input type="email" [(ngModel)]="email" name="email" required />
-      </label>
-    </div>
-    <div class="form-control">
-      <label>
-        <span>Contraseña</span>
-        <input
-          type="password"
-          [(ngModel)]="password"
-          name="password"
-          required
-        />
-      </label>
-    </div>
-    <button class="btn" type="submit">Registrarse</button>
-  </form>
-  <!-- Formulario de inicio de sesión -->
-  <form class="form" (ngSubmit)="iniciar()">
-    <h2>Iniciar sesión</h2>
-    <div class="form-control">
-      <label>
-        <span>Nombre de usuario</span>
-        <input type="text" [(ngModel)]="username" name="username" required />
-      </label>
-    </div>
-    <div class="form-control">
-      <label>
-        <span>Contraseña</span>
-        <input
-          type="password"
-          [(ngModel)]="password"
-          name="password"
-          required
-        />
-      </label>
-    </div>
-    <button class="btn" type="submit">Iniciar sesión</button>
-  </form>
-</div>
-<p class="feedback">{{ mensaje }}</p>
+<body>
+  <div class="form-container">
+    <!-- Formulario de registro -->
+    <form class="form" (ngSubmit)="registro()">
+      <h2>Registro</h2>
+      <div class="form-control">
+        <label>
+          <span>Nombre de usuario</span>
+          <input type="text" [(ngModel)]="username" name="username" required />
+        </label>
+      </div>
+      <div class="form-control">
+        <label>
+          <span>Correo electrónico</span>
+          <input type="email" [(ngModel)]="email" name="email" required />
+        </label>
+      </div>
+      <div class="form-control">
+        <label>
+          <span>Contraseña</span>
+          <input
+            type="password"
+            [(ngModel)]="password"
+            name="password"
+            required
+          />
+        </label>
+      </div>
+      <button class="btn" type="submit">Registrarse</button>
+    </form>
+    <!-- Formulario de inicio de sesión -->
+    <form class="form" (ngSubmit)="iniciar()">
+      <h2>Iniciar sesión</h2>
+      <div class="form-control">
+        <label>
+          <span>Nombre de usuario</span>
+          <input type="text" [(ngModel)]="username" name="username" required />
+        </label>
+      </div>
+      <div class="form-control">
+        <label>
+          <span>Contraseña</span>
+          <input
+            type="password"
+            [(ngModel)]="password"
+            name="password"
+            required
+          />
+        </label>
+      </div>
+      <button class="btn" type="submit">Iniciar sesión</button>
+    </form>
+  </div>
+  <p class="feedback">{{ mensaje }}</p>
+</body>

@@ -25,28 +25,29 @@ export class ReservarComponent implements OnInit {
     console.log(usuario);
     // Revisar si el usuario existe en el localStorage
     // Obtener el arreglo de usuarios del localStorage
-    const usuarios = JSON.parse(localStorage.getItem('usuarios'));
+    const reservas = JSON.parse(localStorage.getItem('reserva')) || [];
 
     // Buscar el usuario ingresado en el arreglo de usuarios
-    const usuarioExiste = usuarios.find((u) => u.username === usuario);
-
-    if (usuarioExiste) {
-      // Guardar la información de la reserva en el localStorage
-      localStorage.setItem(
-        'reserva',
-        JSON.stringify({
-          peliculaId: this.pelicula.id,
-          fecha: fecha,
-          hora: hora,
-        })
-      );
-
-      // Mostrar un mensaje de éxito
-      alert('Reserva realizada con éxito!');
-    } else {
-      // Mostrar un mensaje de error
-      alert('Usuario no encontrado!');
+    if (
+      reservas.some(
+        (reserva) => reserva.fecha === this.fecha || reserva.hora === this.hora
+      )
+    ) {
+      alert('Funcion no disponible');
+      return;
     }
+    reservas.push({
+      usuario: this.usuario,
+      fecha: this.fecha,
+      hora: this.hora,
+      pelicula: this.pelicula.id,
+    });
+    // Guardar la información de la reserva en el localStorage
+    localStorage.setItem('reserva', JSON.stringify(reservas));
+
+    // Mostrar un mensaje de éxito
+    alert('Reserva realizada con éxito!');
+    return;
   }
 
   ngOnInit(): void {
