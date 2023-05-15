@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { Message } from 'primeng/api';
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
@@ -10,14 +10,16 @@ export class PerfilComponent implements OnInit {
   username: string;
   email: string;
   password: string;
-  mensaje: string;
+  mensaje: string = '';
   reservas: any[];
-
+  
   constructor(private router: Router) {
     const reservasLocalStorage = JSON.parse(localStorage.getItem('reserva'));
     this.reservas = reservasLocalStorage ? reservasLocalStorage : [];
   }
-  ngOnInit() {}
+  ngOnInit() {
+    
+  }
   registro() {
     // validamos que todos los campos estén llenos
     if (!this.username || !this.email || !this.password) {
@@ -42,6 +44,7 @@ export class PerfilComponent implements OnInit {
 
     // mostramos un mensaje de éxito
     this.mensaje = 'Usuario creado exitosamente.';
+    
   }
 
   iniciar() {
