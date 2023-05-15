@@ -17,10 +17,18 @@ export class ReservarComponent implements OnInit {
     private route: ActivatedRoute,
     private carteleraService: CarteleraService
   ) {}
-  /*
-  reservar() {
+
+  reservar(formulario: any) {
+    const usuario = formulario.usuario;
+    const fecha = formulario.fecha;
+    const hora = formulario.hora;
+
     // Revisar si el usuario existe en el localStorage
-    const usuarioExiste = localStorage.getItem('usuario') === this.usuario;
+    // Obtener el arreglo de usuarios del localStorage
+    const usuarios = JSON.parse(localStorage.getItem('usuarios'));
+
+    // Buscar el usuario ingresado en el arreglo de usuarios
+    const usuarioExiste = usuarios.find((u) => u.username === usuario);
 
     if (usuarioExiste) {
       // Guardar la información de la reserva en el localStorage
@@ -28,8 +36,8 @@ export class ReservarComponent implements OnInit {
         'reserva',
         JSON.stringify({
           peliculaId: this.pelicula.id,
-          fecha: this.fecha,
-          hora: this.hora,
+          fecha: fecha,
+          hora: hora,
         })
       );
 
@@ -39,7 +47,7 @@ export class ReservarComponent implements OnInit {
       // Mostrar un mensaje de error
       alert('Usuario no encontrado!');
     }
-  }*/
+  }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');

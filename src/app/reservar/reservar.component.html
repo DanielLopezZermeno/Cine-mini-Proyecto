@@ -21,23 +21,16 @@
     </tr>
   </table>
 </div>
-<!--
-<form (ngSubmit)="reservar()">
+
+<form #formulario class="mi-formulario" (ngSubmit)="reservar(formulario.value)">
   <label for="usuario">Usuario:</label>
-  <input
-    type="text"
-    id="usuario"
-    name="usuario"
-    [(ngModel)]="usuario"
-    required
-  />
+  <input type="text" id="usuario" name="usuario" required />
 
   <label for="start">Seleccione Fecha:</label>
   <input
     type="date"
     id="start"
     name="fecha"
-    [(ngModel)]="fecha"
     min="2023-05-14"
     max="2023-12-31"
   />
@@ -47,7 +40,6 @@
     type="time"
     id="hora"
     name="hora"
-    [(ngModel)]="hora"
     min="09:00"
     max="18:00"
     step="3600"
@@ -55,4 +47,3 @@
 
   <button type="submit">Reservar</button>
 </form>
--->
