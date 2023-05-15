@@ -10,7 +10,7 @@ import { AlimentoService } from './alimentos/alimentos.service';
 import { UbicanosComponent } from './ubicanos/ubicanos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CarteleraService } from './cartelera/cartelera.service';
-
+import { CalendarModule } from 'primeng/calendar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReservarComponent } from './reservar/reservar.component';
 import { SeguroPipe } from './alimentos/seguro.pipe';
@@ -20,6 +20,7 @@ import { SeguroPipe } from './alimentos/seguro.pipe';
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    CalendarModule,
   ],
   declarations: [
     AppComponent,

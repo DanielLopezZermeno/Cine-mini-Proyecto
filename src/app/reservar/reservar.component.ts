@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 import { CarteleraService } from '../cartelera/cartelera.service';
 import { Pelicula } from '../pelicula';
 
@@ -13,6 +14,7 @@ export class ReservarComponent implements OnInit {
   hora: string;
   pelicula: Pelicula;
   usuario: string;
+  date:Date;
   constructor(
     private route: ActivatedRoute,
     private carteleraService: CarteleraService
@@ -29,7 +31,15 @@ export class ReservarComponent implements OnInit {
         (reserva) => reserva.fecha === this.fecha || reserva.hora === this.hora
       )
     ) {
-      alert('Funcion no disponible');
+      Swal.fire({
+        title: 'Funcion no disponible, Intenta otra',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown',
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp',
+        },
+      });
       return;
     }
     reservas.push({
@@ -42,7 +52,15 @@ export class ReservarComponent implements OnInit {
     localStorage.setItem('reserva', JSON.stringify(reservas));
 
     // Mostrar un mensaje de éxito
-    alert('Reserva realizada con éxito!');
+    Swal.fire({
+      title: 'Funcion reservada con exito!',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown',
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp',
+      },
+    });
     return;
   }
 

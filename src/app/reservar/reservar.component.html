@@ -33,14 +33,7 @@
   />
 
   <label for="start">Seleccione Fecha:</label>
-  <input
-    type="date"
-    id="start"
-    name="fecha"
-    [(ngModel)]="fecha"
-    min="2023-05-14"
-    max="2023-12-31"
-  />
+  <p-calendar [(ngModel)]="date"></p-calendar>
 
   <label for="hora">Seleccione Hora:</label>
   <input
@@ -55,3 +48,4 @@
 
   <button type="submit">Reservar</button>
 </form>
+
