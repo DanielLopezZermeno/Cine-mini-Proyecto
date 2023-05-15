@@ -51,7 +51,12 @@
       <button class="btn" type="submit">Iniciar sesión</button>
     </form>
   </div>
-  <p class="feedback">{{ mensaje }}</p>
+  <p-messages
+    [showTransitionOptions]="'500ms'"
+    [hideTransitionOptions]="'500ms'"
+    [enableService]="false"
+    >{{ mensaje }}</p-messages
+  >
   <p-table [value]="reservas">
     <ng-template pTemplate="header">
       <tr>
@@ -70,5 +75,4 @@
       </tr>
     </ng-template>
   </p-table>
-  
 </body>

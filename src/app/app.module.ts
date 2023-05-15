@@ -16,6 +16,7 @@ import { ReservarComponent } from './reservar/reservar.component';
 import { SeguroPipe } from './alimentos/seguro.pipe';
 import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
+import { MessagesModule } from 'primeng/messages';
 @NgModule({
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import { TableModule } from 'primeng/table';
     ReactiveFormsModule,
     CommonModule,
     TableModule,
+    MessagesModule,
   ],
   declarations: [
     AppComponent,
