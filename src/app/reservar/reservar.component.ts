@@ -10,11 +10,10 @@ import { Pelicula } from '../pelicula';
   styleUrls: ['./reservar.component.css'],
 })
 export class ReservarComponent implements OnInit {
-  fecha: string;
+  fecha: Date;
   hora: string;
   pelicula: Pelicula;
   usuario: string;
-  date:Date;
   constructor(
     private route: ActivatedRoute,
     private carteleraService: CarteleraService
@@ -23,6 +22,7 @@ export class ReservarComponent implements OnInit {
   reservar() {
     // Revisar si el usuario existe en el localStorage
     // Obtener el arreglo de usuarios del localStorage
+    console.log(this.fecha);
     const reservas = JSON.parse(localStorage.getItem('reserva')) || [];
 
     // Buscar el usuario ingresado en el arreglo de usuarios

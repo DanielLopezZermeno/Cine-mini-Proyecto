@@ -21,6 +21,7 @@ import { SeguroPipe } from './alimentos/seguro.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     CalendarModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     AppComponent,
