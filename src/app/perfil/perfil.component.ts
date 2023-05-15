@@ -11,7 +11,12 @@ export class PerfilComponent implements OnInit {
   email: string;
   password: string;
   mensaje: string;
-  constructor(private router: Router) {}
+  reservas: any[];
+
+  constructor(private router: Router) {
+    const reservasLocalStorage = JSON.parse(localStorage.getItem('reserva'));
+    this.reservas = reservasLocalStorage ? reservasLocalStorage : [];
+  }
   ngOnInit() {}
   registro() {
     // validamos que todos los campos estén llenos

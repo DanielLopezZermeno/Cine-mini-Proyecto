@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReservarComponent } from './reservar/reservar.component';
 import { SeguroPipe } from './alimentos/seguro.pipe';
 import { CommonModule } from '@angular/common';
+import { TableModule } from 'primeng/table';
 @NgModule({
   imports: [
     BrowserModule,
@@ -24,6 +25,7 @@ import { CommonModule } from '@angular/common';
     CalendarModule,
     ReactiveFormsModule,
     CommonModule,
+    TableModule,
   ],
   declarations: [
     AppComponent,

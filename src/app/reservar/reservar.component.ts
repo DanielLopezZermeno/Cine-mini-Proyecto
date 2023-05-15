@@ -1,4 +1,3 @@
-import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
@@ -18,8 +17,7 @@ export class ReservarComponent implements OnInit {
   minFecha: Date;
   constructor(
     private route: ActivatedRoute,
-    private carteleraService: CarteleraService,
-    private datePipe: DatePipe
+    private carteleraService: CarteleraService
   ) {
     this.minFecha = new Date();
     this.minFecha.setDate(this.minFecha.getDate()); // Fecha mínima es en 7 días

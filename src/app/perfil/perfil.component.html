@@ -52,4 +52,23 @@
     </form>
   </div>
   <p class="feedback">{{ mensaje }}</p>
+  <p-table [value]="reservas">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Usuario</th>
+        <th>Hora</th>
+        <th>Película</th>
+        <th>Fecha</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-reserva>
+      <tr>
+        <td>{{ reserva.usuario }}</td>
+        <td>{{ reserva.hora }}</td>
+        <td>{{ reserva.pelicula }}</td>
+        <td>{{ reserva.fecha }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  
 </body>
